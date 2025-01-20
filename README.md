@@ -17,6 +17,12 @@ make
 
 The last parameter is the file format which can be either jpg or png.
 
+An included example can be built with:
+
+```
+make example
+```
+
 The program assumes the folder contains files with the convention:
 
 - `DiamondPlate007D_2K-JPG_Color.jpg` - diffuse, not used by this program but assumed as a base path

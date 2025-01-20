@@ -16,6 +16,8 @@ SOURCES_C=
 OBJECTS_CPP=$(SOURCES_CPP:.cpp=.o)
 OBJECTS_C=$(SOURCES_C:.c=.o)
 
+.PHONY: clean example
+
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS_CPP) $(OBJECTS_C)
@@ -30,3 +32,6 @@ $(EXECUTABLE): $(OBJECTS_CPP) $(OBJECTS_C)
 clean:
 	rm -f ./*.o
 	rm -f ./$(EXECUTABLE)
+
+example: all
+	./ormGenerate ./DiamondPlate007D_2K-JPG_Color.jpg jpg
