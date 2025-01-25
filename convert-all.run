@@ -1,6 +1,8 @@
 #!/bin/bash
 # Finds all files ending in "Color.jpg" in the given folder and runs ormGenerate on them all.
 # Assumes ormGenerate is in cwd
+# This script searches child directories.
+
 set -e
 
 if [ "$#" -ne 1 ]; then
